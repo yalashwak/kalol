@@ -1,0 +1,50 @@
+.input-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--nord8);
+  border-radius: 8px;
+  background: var(--nord0);
+  color: var(--nord4);
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--nord8);
+  box-shadow: 0 0 8px rgba(136, 192, 208, 0.5);
+}
+
+label {
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--nord4);
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -1rem;
+  left: 0.4rem;
+  font-size: 0.75rem;
+  transform: translateY(0);
+  color: var(--nord8);
+  background: var(--nord1);
+  padding: 0 0.2rem;
+}
+
+.error {
+  color: var(--nord11);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: none;
+}

@@ -1,0 +1,177 @@
+
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--nord0);
+            overflow: hidden;
+        }
+
+            .signup-container {
+            background: var(--nord1);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(var(--nord2-rgb), 0.3);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 400px;
+            animation: fadeIn 0.8s ease-out;
+            text-align: center;
+        }
+
+        .login-container {
+            background: var(--nord1);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(var(--nord2-rgb, 67, 76, 94), 0.3);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 400px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: var(--nord6);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        button, input[type="submit"] {
+            width: 100%;
+            padding: 0.9rem;
+            background: var(--nord8);
+            border: none;
+            border-radius: 8px;
+            color: var(--nord0);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover, input[type="submit"]:hover {
+            background: var(--nord9);
+            transform: translateY(-2px);
+        }
+
+        button:active, input[type="submit"]:active {
+            transform: translateY(0);
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .signup-link p {
+            color: var(--nord6);
+            font-size: 0.9rem;
+            display: inline;
+        }
+
+        .signup-link a {
+            color: var(--nord7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .signup-link a:hover {
+            color: var(--nord9);
+            text-decoration: underline;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .login-link p {
+            color: var(--nord6);
+            font-size: 0.9rem;
+            display: inline;
+        }
+
+        .login-link a {
+            color: var(--nord7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .login-link a:hover {
+            color: var(--nord9);
+            text-decoration: underline;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--nord8);
+            border-radius: 8px;
+            background: var(--nord0);
+            color: var(--nord6);
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--nord7);
+            box-shadow: 0 0 8px rgba(var(--nord8-rgb), 0.5);
+        }
+
+        label {
+            position: absolute;
+            left: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--nord6);
+            font-size: 1rem;
+            pointer-events: none;
+            transition: all 0.2s ease;
+        }
+
+        input:focus + label,
+        input:not(:placeholder-shown) + label {
+            top: -1rem;
+            left: 0.4rem;
+            font-size: 0.75rem;
+            transform: translateY(0);
+            color: var(--nord8);
+            background: var(--nord1);
+            padding: 0 0.2rem;
+        }
+
+        .error {
+            color: var(--nord11);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+        }

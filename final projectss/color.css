@@ -1,0 +1,25 @@
+        /* Nord theme color variables */
+           :root {
+            /* Polar Night */
+            --nord0: #2E3440; /* Background */
+            --nord1: #3B4252; /* Card background */
+            --nord2: #434C5E; /* Darker accents */
+            --nord3: #4C566A; /* Subtle dark */
+            /* Snow Storm */
+            --nord4: #D8DEE9; /* Secondary text */
+            --nord5: #E5E9F0; /* Light accents */
+            --nord6: #ECEFF4; /* Primary text */
+            /* Frost */
+            --nord7: #8FBCBB; /* Subtle accent */
+            --nord8: #88C0D0; /* Primary accent */
+            --nord9: #81A1C1; /* Hover accent */
+            --nord10: #5E81AC; /* Deep accent */
+            /* Aurora */
+            --nord11: #BF616A; /* Error/red */
+            --nord12: #D08770; /* Orange */
+            --nord13: #EBCB8B; /* Yellow */
+            --nord14: #A3BE8C; /* Green */
+            --nord15: #B48EAD; /* Purple */
+            /* RGB for shadows */
+            --nord8-rgb: 136, 192, 208;
+           }
